@@ -42,7 +42,7 @@ class ImageCompressor
             } else{
                 $dest_dir = $dirname;
             }
-            $output_file = $dest_dir.'/'.$name.'-q-'.$quality.'.'.$extension;
+            $output_file = $this->getOutputName($quality, $dest_dir, $name, $extension);
 
             $options = [
                 ''.$filename,
@@ -78,6 +78,18 @@ class ImageCompressor
     public function getOptimizedDir()
     {
         return $this->optimized_dir;
+    }
+
+    /**
+     * @param $quality
+     * @param $dest_dir
+     * @param $name
+     * @param $extension
+     * @return string
+     */
+    public function getOutputName($quality, $dest_dir, $name, $extension)
+    {
+        return $dest_dir . '/' . $name . '-q-' . $quality . '.' . $extension;
     }
 
 }
