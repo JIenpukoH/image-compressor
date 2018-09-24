@@ -6,20 +6,22 @@
  * Time: 15:19
  */
 
-namespace JIenpukoH\ImageResizer;
+namespace JIenpukoH\ImageCompressor;
 
 
-use JIenpukoH\ImageResizer\Interfaces\Resizable;
 
-class Example implements Resizable
+
+use JIenpukoH\ImageCompressor\Compressor\ImageCompressor;
+
+class Example
 {
-
-    use Resizer;
-    public function getImage()
+    public function compress()
     {
         $src = 'images/upload/myphoto.jpg';
-
-        return $this->getImageUrl($src,200,300,false);
+        $compressor = new ImageCompressor();
+        $compressor->compress($this->getRootDir().'/'.$src);
+        $path = pathinfo($src);
+        return $compressor->getOptimized($path['dirname'],$path['basename']);
     }
 
     public function getRootDir(){

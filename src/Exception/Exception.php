@@ -1,7 +1,7 @@
 <?php
 
 
-namespace JIenpukoH\ImageResizer\Compressor\Exception;
+namespace JIenpukoH\ImageCompressor\Exception;
 
 class Exception extends \RuntimeException
 {

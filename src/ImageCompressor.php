@@ -6,11 +6,11 @@
  * Time: 11:11
  */
 
-namespace JIenpukoH\ImageResizer\Compressor;
+namespace JIenpukoH\ImageCompressor\Compressor;
 
 
 
-use JIenpukoH\ImageResizer\ImageResize;
+use JIenpukoH\ImageCompressor\Command;
 
 class ImageCompressor
 {
@@ -69,7 +69,7 @@ class ImageCompressor
         return file_exists($dest_dir.'/'.$path['filename'].'-q-'.$quality.'.'.$path['extension']);
     }
 
-    public function getOptimized($dirname,$filename,$quality)
+    public function getOptimized($dirname,$filename,$quality = 85)
     {
         $path = pathinfo($filename);
         $dest_dir = $dirname.'/'.$this->getOptimizedDir().'/' ;

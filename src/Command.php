@@ -1,10 +1,10 @@
 <?php
 
 
-namespace JIenpukoH\ImageResizer\Compressor;
+namespace JIenpukoH\ImageCompressor;
 
 
-use JIenpukoH\ImageResizer\Compressor\Exception\CommandNotFound;
+use JIenpukoH\ImageCompressor\Exception\CommandNotFound;
 
 final class Command
 {
