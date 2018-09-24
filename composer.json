@@ -1,5 +1,5 @@
 {
-    "name": "jienpukoh/image-compress",
+    "name": "jienpukoh/image-compressor",
     "description": "Image compression with Convert@ImageMagick",
     "type": "library",
     "license": "MIT",
