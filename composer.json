@@ -2,6 +2,7 @@
     "name": "jienpukoh/image-compressor",
     "description": "Image compression with Convert@ImageMagick",
     "type": "library",
+    "version": "1.0.0",
     "license": "MIT",
     "authors": [
         {
