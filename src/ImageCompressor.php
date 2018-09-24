@@ -62,7 +62,7 @@ class ImageCompressor
         }
     }
 
-    public function optimizedExist($filename,$quality)
+    public function optimizedExist($filename,$quality = 85)
     {
         $path = pathinfo($filename);
         $dest_dir = $path['dirname'].'/'.$this->optimized_dir;
