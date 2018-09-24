@@ -1,0 +1,22 @@
+{
+    "name": "jienpukoh/image-compress",
+    "description": "Image compression with Convert@ImageMagick",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Asset Mamyraimov",
+            "email": "mamiraimov.aset@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "JIenpukoH\\ImageCompressor\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "ext-imagick": "*"
+    }
+}
