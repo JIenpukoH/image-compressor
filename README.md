@@ -10,9 +10,9 @@ class Example
         $compressor = new ImageCompressor();
         $compressor->compress($this->getRootDir());
         $path = pathinfo($src);
-        $compressed_name = $compressor->getOptimized($path['dirname'],$path['basename']);
+        $compressedPath = $compressor->getOptimized($path['dirname'],$path['basename']);
         if($compressor->optimizedExist($compressed_name)){
-            return $compressed_name;
+            return $compressedPath;
         }
         return $src;
     }
